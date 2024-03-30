@@ -32,8 +32,10 @@ export default defineNuxtConfig({
 		},
 	},
 
+	// this is going to make your bundle size explode. If you are on cloudflare's free tier
+	// then you won't be able to use it with the 1MB limit workers have
 	ogImage: {
-		enabled: true,
+		enabled: false,
 	},
 
 	sitemap: {
